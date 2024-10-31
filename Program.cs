@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Text;
-using System.Threading;
 
 namespace DungeonEscape
 {
@@ -64,8 +62,6 @@ namespace DungeonEscape
                 loopKey = Console.ReadKey(true).Key;
             }
             while (loopKey == ConsoleKey.Enter);
-            
-
         }
     }
 }

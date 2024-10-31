@@ -4,8 +4,9 @@ using static DungeonEscape.MazeHelper;
 
 namespace DungeonEscape
 {
-
-
+    /// <summary>
+    /// The navigation logic to move around in a 2d <see cref="int[,]"/> array
+    /// </summary>
     public sealed class PlayerNavigator : IMaze
     {
         public string GameOverMessage { get; private set; }

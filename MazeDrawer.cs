@@ -3,8 +3,20 @@ using static DungeonEscape.MazeGenerator;
 
 namespace DungeonEscape
 {
+    /// <summary>
+    /// Can visualize a render of a 2d <see cref="int[,]"/> array
+    /// </summary>
     public static class MazeDrawer
     {
+        /// <summary>
+        /// Draws a 2d <see cref="int[,]"/> array to visualize a maze
+        /// </summary>
+        /// <param name="playerX">The current player X position</param>
+        /// <param name="playerY">The current player X position</param>
+        /// <param name="maze">The 2d <see cref="int[,]"/> array that defines the maze</param>
+        /// <param name="visitedRooms">The 2d <see cref="int[,]"/> array that defines where the player has been</param>
+        /// <param name="showMap">Toggles the full exposed maze</param>
+        /// <exception cref="IndexOutOfRangeException"></exception>
         public static void Draw(int playerX, int playerY, in int[,] maze, in int[,] visitedRooms, bool showMap = false)
         {
             if (maze.Length != visitedRooms.Length) throw new IndexOutOfRangeException("MazeDrawer.Draw; maze & visitedRooms lengths dosen't match!");
