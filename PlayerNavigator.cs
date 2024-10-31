@@ -4,13 +4,12 @@ using static DungeonEscape.MazeHelper;
 
 namespace DungeonEscape
 {
+
+
     public sealed class PlayerNavigator : IMaze
     {
-        public event EventHandler? OnFoundKey;
-        public event EventHandler? OnFoundExit;
-        public event EventHandler? OnPlayerDied;
-        public event EventHandler? OnGameEnd;
-
+        public string GameOverMessage { get; private set; }
+        public bool IsGameOver { get; private set; }
         public int[,] Maze { get; }
         public int[,] VisitedRooms
         {
@@ -47,24 +46,25 @@ namespace DungeonEscape
             if (roomType == RoomType.Trap)
             {
                 /*Player died*/
-                OnPlayerDied?.Invoke(this, EventArgs.Empty);
+                GameOverMessage = "You died to a trap!";
+                IsGameOver = true;
             }
             if (!_hasKey && roomType == RoomType.Key)
             {
-                _hasKey = true;
-                Maze[_playerX, _playerY] = (int)RoomType.Empty;
                 /*Player found the key*/
-                OnFoundKey?.Invoke(this, EventArgs.Empty);
+                _hasKey = true;
+
             }
             if (_hasKey && roomType == RoomType.Exit)
             {
                 /*Player found the exit and got the key*/
-                OnGameEnd?.Invoke(this, EventArgs.Empty);
+                GameOverMessage = "You completed the Dungeon!";
+                IsGameOver = true;
+
             }
             else if (!_hasKey)
             {
                 /*Player found the exit but missing the key*/
-                OnFoundExit?.Invoke(this, EventArgs.Empty);
             }
         }
         public void SpawnPlayer()

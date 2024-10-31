@@ -31,7 +31,7 @@ namespace DungeonEscape
             if (size < 3) throw new ArgumentOutOfRangeException(nameof(size), "Maze size must be at least 3.");
 
             _maze = new int[size, size];
-            maxTraps = (byte)Math.Clamp(maxTraps, 0, Math.Pow(size, 2) - 2);
+            maxTraps = (byte)Math.Clamp(maxTraps, 0, Math.Pow(size, 2) - 3);
             byte trapsPlaced = 0;
 
             int keyX = GetRandom(new(0, size));

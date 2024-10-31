@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DungeonEscape")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a12d052104dee60607d62ba3619856f899aedfa3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b0ee1debf384584410a94051c8656a4f7cfdfaa")]
 [assembly: System.Reflection.AssemblyProductAttribute("DungeonEscape")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DungeonEscape")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
