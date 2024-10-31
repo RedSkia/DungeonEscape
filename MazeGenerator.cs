@@ -28,6 +28,8 @@ namespace DungeonEscape
         }
         public void GenerateMaze(byte size = 5, byte maxTraps = 5)
         {
+            if (size < 3) throw new ArgumentOutOfRangeException(nameof(size), "Maze size must be at least 3.");
+
             _maze = new int[size, size];
             maxTraps = (byte)Math.Clamp(maxTraps, 0, Math.Pow(size, 2) - 2);
             byte trapsPlaced = 0;

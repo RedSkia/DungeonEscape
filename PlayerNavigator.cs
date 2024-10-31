@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static DungeonEscape.MazeGenerator;
 using static DungeonEscape.MazeHelper;
 
@@ -10,17 +6,29 @@ namespace DungeonEscape
 {
     public sealed class PlayerNavigator : IMaze
     {
+        public event EventHandler? OnFoundKey;
+        public event EventHandler? OnFoundExit;
+        public event EventHandler? OnPlayerDied;
+        public event EventHandler? OnGameEnd;
+
         public int[,] Maze { get; }
-        public bool[,] VisitedRooms
+        public int[,] VisitedRooms
         {
             get
             {
-                bool[,] copy = new bool[_visitedRooms.GetLength(0), _visitedRooms.GetLength(1)];
+                int[,] copy = new int[_visitedRooms.GetLength(0), _visitedRooms.GetLength(1)];
                 Array.Copy(_visitedRooms, copy, _visitedRooms.Length);
                 return copy;
             }
         }
-        private bool[,] _visitedRooms; //X,Y,0-1
+        public int PlayerX => _playerX;
+        public int PlayerY => _playerY;
+        /// <summary>
+        /// X
+        /// Y
+        /// HasVisited 0-1
+        /// </summary>
+        private int[,] _visitedRooms;
         private int _playerX, _playerY;
         private bool _hasKey;
         public PlayerNavigator(IMazeGenerator mazeGen)
@@ -28,64 +36,68 @@ namespace DungeonEscape
             if(mazeGen is null) throw new ArgumentNullException(nameof(mazeGen), "Is null");
             if(mazeGen.Maze is null) throw new ArgumentNullException(nameof(mazeGen.Maze), "Is null");
             Maze = mazeGen.Maze;
-            _visitedRooms = new bool[Maze.GetLength(0), Maze.GetLength(1)];
+            _visitedRooms = new int[Maze.GetLength(0), Maze.GetLength(1)];
         }
-        private bool CanNavigate(int x = 0, int y = 0) => x >= 0 && y >= 0 && x < Maze.GetLength(0) && y < Maze.GetLength(1);
+        private bool CanNavigate(int x, int y) => x >= 0 && x < Maze.GetLength(0) && y >= 0 && y < Maze.GetLength(1);
         private void CheckRoom()
         {
-            _visitedRooms[_playerX, _playerY] = true;
-            if(Maze[_playerX, _playerY] == (int)RoomType.Trap)
+            RoomType roomType = (RoomType)Maze[_playerX, _playerY];
+            _visitedRooms[_playerX, _playerY] = 1;
+
+            if (roomType == RoomType.Trap)
             {
                 /*Player died*/
+                OnPlayerDied?.Invoke(this, EventArgs.Empty);
             }
-            if (!_hasKey && Maze[_playerX, _playerY] == (int)RoomType.Key)
+            if (!_hasKey && roomType == RoomType.Key)
             {
-                /*Found the key*/
                 _hasKey = true;
                 Maze[_playerX, _playerY] = (int)RoomType.Empty;
+                /*Player found the key*/
+                OnFoundKey?.Invoke(this, EventArgs.Empty);
             }
-            if (_hasKey && Maze[_playerX, _playerY] == (int)RoomType.Exit)
+            if (_hasKey && roomType == RoomType.Exit)
             {
-                /*Has key and found the exit*/
+                /*Player found the exit and got the key*/
+                OnGameEnd?.Invoke(this, EventArgs.Empty);
             }
-            else if(!_hasKey)
+            else if (!_hasKey)
             {
-                /*Found exit but missing*/
+                /*Player found the exit but missing the key*/
+                OnFoundExit?.Invoke(this, EventArgs.Empty);
             }
-
         }
         public void SpawnPlayer()
         {
             do
             {
                 _playerX = GetRandom(new(0, Maze.GetLength(0)));
-                _playerY = GetRandom(new(0, Maze.GetLength(2)));
+                _playerY = GetRandom(new(0, Maze.GetLength(1)));
             } while (Maze[_playerX, _playerY] != (int)RoomType.Empty);
         }
 
-        //Y = Vertical; X = Horizontal
         public void NavigateUp()
         {
-            if(!CanNavigate(y: _playerY+1)) return;
-            _playerY++;
+            if (!CanNavigate(_playerX - 1, _playerY)) return;
+            _playerX--;
             CheckRoom();
         }
         public void NavigateDown()
         {
-            if (!CanNavigate(y: _playerY - 1)) return;
-            _playerY--;
+            if (!CanNavigate(_playerX + 1, _playerY)) return;
+            _playerX++;
             CheckRoom();
         }
         public void NavigateLeft()
         {
-            if (!CanNavigate(x: _playerX + 1)) return;
-            _playerX++;
+            if (!CanNavigate(_playerX, _playerY - 1)) return;
+            _playerY--;
             CheckRoom();
         }
         public void NavigateRight()
         {
-            if (!CanNavigate(x: _playerX - 1)) return;
-            _playerX--;
+            if (!CanNavigate(_playerX, _playerY + 1)) return;
+            _playerY++;
             CheckRoom();
         }
     }

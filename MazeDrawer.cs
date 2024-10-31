@@ -1,40 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static DungeonEscape.MazeGenerator;
 
 namespace DungeonEscape
 {
     public static class MazeDrawer
     {
-        public static void Draw<T>(int playerX, int playerY, in T[,] rooms)
+        public static void Draw(int playerX, int playerY, in int[,] maze, in int[,] visitedRooms, bool useCheats = false)
         {
-            for (int x = 0; x < rooms.GetLength(0); x++)
+            if (maze.Length != visitedRooms.Length) throw new IndexOutOfRangeException("MazeDrawer.Draw; maze & visitedRooms lengths dosen't match!");
+            for (int x = 0; x < maze.GetLength(0); x++)
             {
-                for (int y = 0; y < rooms.GetLength(1); y++)
+                for (int y = 0; y < maze.GetLength(1); y++)
                 {
-                    Console.ForegroundColor = ConsoleColor.White;
-                    switch (rooms[x, y])
+                    if (x == playerX && y == playerY)
                     {
-                        case (int)RoomType.Exit:{
-                            Console.ForegroundColor = ConsoleColor.Green;
-
-                        }; break;
-                        case (int)RoomType.Key: Console.ForegroundColor = ConsoleColor.Yellow; break;
-                        case (int)RoomType.Trap: Console.ForegroundColor = ConsoleColor.Red; break;
-                    }
-                    if(x == playerX && y == playerY)
-                    {
-                        Console.Write("[P]\t");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write("P\t");
+                        continue;
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("X\t");
                     }
+
+                    if (!useCheats) continue; /*For Cheaters*/
+
+                    RoomType room = (RoomType)maze[x, y];
+                    if (room == RoomType.Exit)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("E\t");
+                    }
+                    else if (room == RoomType.Key)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("K\t");
+                    }
+                    else if (room == RoomType.Trap)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("T\t");
+                    }
                 }
-                // Move to the next line after each row
                 Console.WriteLine();
             }
         }
