@@ -7,24 +7,32 @@
       "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:playernavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|d:\\marcus\\desktop\\dungeonescape\\mazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:mazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|d:\\marcus\\desktop\\dungeonescape\\imaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:imaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|d:\\marcus\\desktop\\dungeonescape\\imazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:imazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|d:\\marcus\\desktop\\dungeonescape\\dungeonescape.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:dungeonescape.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|d:\\marcus\\desktop\\dungeonescape\\mazedrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:mazedrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|D:\\Marcus\\Desktop\\DungeonEscape\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|D:\\Marcus\\Desktop\\DungeonEscape\\mazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:mazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|d:\\marcus\\desktop\\dungeonescape\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|D:\\Marcus\\Desktop\\DungeonEscape\\imaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:imaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|D:\\Marcus\\Desktop\\DungeonEscape\\imazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:imazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|D:\\Marcus\\Desktop\\DungeonEscape\\dungeonescape.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FBAA05EF-5FA3-4B76-BBF2-6F00C53BDC4A}|DungeonEscape.csproj|solutionrelative:dungeonescape.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +42,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "MazeDrawer.cs",
+              "DocumentMoniker": "D:\\Marcus\\Desktop\\DungeonEscape\\MazeDrawer.cs",
+              "RelativeDocumentMoniker": "MazeDrawer.cs",
+              "ToolTip": "D:\\Marcus\\Desktop\\DungeonEscape\\MazeDrawer.cs",
+              "RelativeToolTip": "MazeDrawer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T09:13:59.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\Marcus\\Desktop\\DungeonEscape\\Logger.cs",
+              "RelativeDocumentMoniker": "Logger.cs",
+              "ToolTip": "D:\\Marcus\\Desktop\\DungeonEscape\\Logger.cs",
+              "RelativeToolTip": "Logger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T09:08:39.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IMaze.cs",
               "DocumentMoniker": "D:\\Marcus\\Desktop\\DungeonEscape\\IMaze.cs",
               "RelativeDocumentMoniker": "IMaze.cs",
@@ -46,12 +84,11 @@
               "RelativeToolTip": "IMaze.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T08:24:44.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T08:24:44.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IMazeGenerator.cs",
               "DocumentMoniker": "D:\\Marcus\\Desktop\\DungeonEscape\\IMazeGenerator.cs",
               "RelativeDocumentMoniker": "IMazeGenerator.cs",
@@ -59,8 +96,7 @@
               "RelativeToolTip": "IMazeGenerator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T08:16:39.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T08:16:39.273Z"
             },
             {
               "$type": "Document",
@@ -70,30 +106,25 @@
               "RelativeDocumentMoniker": "PlayerNavigator.cs",
               "ToolTip": "D:\\Marcus\\Desktop\\DungeonEscape\\PlayerNavigator.cs",
               "RelativeToolTip": "PlayerNavigator.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBoAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwC4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T08:16:03.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "DungeonEscape",
               "DocumentMoniker": "D:\\Marcus\\Desktop\\DungeonEscape\\DungeonEscape.csproj",
               "RelativeDocumentMoniker": "DungeonEscape.csproj",
               "ToolTip": "D:\\Marcus\\Desktop\\DungeonEscape\\DungeonEscape.csproj",
               "RelativeToolTip": "DungeonEscape.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-31T08:14:39.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+              "WhenOpened": "2024-10-31T08:14:39.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MazeGenerator.cs",
               "DocumentMoniker": "D:\\Marcus\\Desktop\\DungeonEscape\\MazeGenerator.cs",
               "RelativeDocumentMoniker": "MazeGenerator.cs",
@@ -106,13 +137,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Marcus\\Desktop\\DungeonEscape\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Marcus\\Desktop\\DungeonEscape\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T07:26:49.109Z",
               "EditorCaption": ""
